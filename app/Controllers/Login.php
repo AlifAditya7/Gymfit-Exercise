@@ -1,4 +1,5 @@
-<?php namespace App\Controllers;
+<?php 
+namespace App\Controllers;
 
 use App\Models\M_user;
 
@@ -18,7 +19,7 @@ class Login extends BaseController
 
       $cek = $muser->get_data($email, $password);
 
-      if (($cek['email'] == $email) && ($cek['password'] == $password))
+      if ($cek && $cek['email'] == $email && $cek['password'] == $password)
       {
          session()->set('email', $cek['email']);
          session()->set('username', $cek['username']);
