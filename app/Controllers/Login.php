@@ -8,7 +8,7 @@ class Login extends BaseController
 	public function index()
 	{
       helper(['form']);
-		return view('user_form');
+		return view('login/user_form');
    }
    
    public function login_action() 

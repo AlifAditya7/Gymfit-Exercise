@@ -1,31 +1,118 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gym Exercise</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow bg-black">
+        <div class="container">
+          <a class="navbar-brand" href="#">Gym Exercise</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Informasi Pengguna</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Program Latihan</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Panduan Nutrisi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Lokasi Gym</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Pelatih Pribadi</a>
+              </li>
+          </div>
+        </div>
+      </nav>
+    <!-- end -->
 
-<head>
-   <!-- Required meta tags -->
-   <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- showcase -->
+      <div class="mt-4 p-5 text-white rounded shadow" style="background-color: #808080;">
+        <div class="d-sm-flex align-items-center justify-content-between">
+          <div>
+            <h1>Selamat datang di <b>Gym Exercise</b></h1>
+            <p class="lead my-4">
+              Aplikasi yang digunakan untuk kebutuhan gym dan nutrisi bagi orang orang yang ingin
+              menurunkan berat badan maupun membuat masa otot
+            </p>
+            <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+            <button class="btn btn-light btn-lg shadow"><i class="material-icons" style="vertical-align: bottom;">arrow_forward</i>Mulai Latihan</button>
+          </div>
+          <video width="320" height="240" controls>
+            <source src="gym_vid.mp4" type="video/mp4"/>
+            browsermu tidak mendukung untuk video ini!
+          </video>
+        </div>
+      </div>
+    <!-- end showcase -->
 
-   <!-- Bootstrap CSS -->
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <div>
+    <style>
+      body {
+        background-image: url(<?= base_url('frontend-gymfit'); ?>/bg\ gym.jpg);
+      }
+    </style>
+    </div>
+      <!-- roadmap -->
+        <section class="p-5">
+          <div class="container">
+          <div class="row text-center g-4">
+            <div class="col-md-4">
+              <div class="card text-dark bg-white" >
+                <div class="card-body">
+                  <img src="otot.jpg" width="100px">
+                  <h3 class="card-title mb-3">Program Latihan</h3>
+                  <p class="card-text">
+                    Berisi tentang program program latihan yang bisa dilakukan
+                    oleh pengguna
+                  </p>
+                  <a href="#" class="btn btn-dark">Selengkapnya</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card text-dark bg-white" >
+                <div class="card-body">
+                  <img src="otot2.jpg" width="100px">
+                  <h3 class="card-title mb-3">Rekomendasi Latihan</h3>
+                  <p class="card-text">
+                    Berisi tentang Rekomendasi program program latihan yang bisa dilakukan
+                    oleh pengguna
+                  </p>
+                  <a href="#" class="btn btn-dark">Selengkapnya</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card text-dark bg-white" >
+                <div class="card-body">
+                  <img src="bel.jpg" width="100px">
+                  <h3 class="card-title mb-3">Pengingat Personal</h3>
+                  <p class="card-text">
+                   pengingat bagi user untuk melakukan atau melanjutkan pelatihannya kembali
+                  </p>
+                  <a href="#" class="btn btn-dark">Selengkapnya</a>
+                </div>
+              </div>
+          </div>
+          </div>
+        </section>
+      <!-- end -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
 
-   <title>User</title>
-</head>
-
-<body>
-   <div class="jumbotron">
-      <h1 class="display-4">Hello, <?= session()->get('username'); ?>!</h1>
-      <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-      <hr class="my-4">
-      <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-      <a class="btn btn-primary btn-lg" href="<?= base_url('login/logout'); ?>" role="button">Logout</a>
-   </div>
-
-   <!-- Optional JavaScript -->
-   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-</body>
-
+  </body>
 </html>

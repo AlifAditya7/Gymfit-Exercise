@@ -10,7 +10,7 @@ class Register extends Controller
         //include helper form
         helper(['form']);
         $data = [];
-        echo view('user_register', $data);
+        echo view('login/user_register', $data);
     }
  
     public function save()
@@ -39,7 +39,7 @@ class Register extends Controller
             return redirect()->to('/login');
         }else{
             $data['validation'] = $this->validator;
-            echo view('user_register', $data);
+            echo view('login/user_register', $data);
         }
          
     }
