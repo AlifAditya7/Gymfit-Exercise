@@ -71,7 +71,7 @@
             <div class="col-md-4">
               <div class="card text-dark bg-white" >
                 <div class="card-body">
-                  <img src="/images/otot.jpg" width="100px">
+                  <img src="/public/frontend-gymfit/images/otot.jpg" width="100px">
                   <h3 class="card-title mb-3">Program Latihan</h3>
                   <p class="card-text">
                     Berisi tentang program program latihan yang bisa dilakukan
@@ -84,7 +84,7 @@
             <div class="col-md-4">
               <div class="card text-dark bg-white" >
                 <div class="card-body">
-                  <img src="/images/otot2.jpg" width="100px">
+                  <img src="/public/frontend-gymfit/images/otot2.jpg" width="100px">
                   <h3 class="card-title mb-3">Rekomendasi Latihan</h3>
                   <p class="card-text">
                     Berisi tentang Rekomendasi program program latihan yang bisa dilakukan
@@ -97,7 +97,7 @@
             <div class="col-md-4">
               <div class="card text-dark bg-white" >
                 <div class="card-body">
-                  <img src="/images/bel.jpg" width="100px">
+                  <img src="/public/frontend-gymfit/images/bel.jpg" width="100px">
                   <h3 class="card-title mb-3">Pengingat Personal</h3>
                   <p class="card-text">
                    pengingat bagi user untuk melakukan atau melanjutkan pelatihannya kembali
