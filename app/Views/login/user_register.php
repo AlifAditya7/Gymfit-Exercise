@@ -29,25 +29,27 @@
                 <div class="login100-pic js-tilt" data-tilt>
                     <img src="<?= base_url('frontend-gymfit'); ?>/images/img-01.png" alt="IMG">
                 </div>
-
-                <form class="login100-form validate-form">
+                <?php if(isset($validation)):?>
+                    <div class="alert alert-danger"><?= $validation->listErrors() ?></div>
+                <?php endif;?>
+                <form class="login100-form validate-form" action="<?= base_url('/Register/save'); ?>" method="POST">
                     <span class="login100-form-title">
                         Register New Member
                     </span>
 
-                    <div class="wrap-input100 validate-input">
-                        <input class="input100" type="text" name="Nama" placeholder="Nama Lengkap">
-                        <span class="focus-input100"></span>
-                        <span class="symbol-input100">
-                            <i class="fa fa-user-circle" aria-hidden="true"></i>
-                        </span>
-                    </div>
-
                     <div class="wrap-input100 validate-input" >
-                        <input class="input100" type="text" name="uname" placeholder="Username">
+                        <input class="input100" type="text" name="username" placeholder="Username">
                         <span class="focus-input100"></span>
                         <span class="symbol-input100">
                             <i class="fa fa-user" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    
+                    <div class="wrap-input100 validate-input">
+                        <input class="input100" type="text" name="fullname" placeholder="Nama Lengkap">
+                        <span class="focus-input100"></span>
+                        <span class="symbol-input100">
+                            <i class="fa fa-user-circle" aria-hidden="true"></i>
                         </span>
                     </div>
 
@@ -60,7 +62,7 @@
                     </div>
 
                     <div class="wrap-input100 validate-input" data-validate="Password is required">
-                        <input class="input100" type="password" name="pass" placeholder="Password">
+                        <input class="input100" type="password" name="password" placeholder="Password">
                         <span class="focus-input100"></span>
                         <span class="symbol-input100">
                             <i class="fa fa-lock" aria-hidden="true"></i>
@@ -68,7 +70,7 @@
                     </div>
 
                     <div class="wrap-input100 validate-input">
-                        <input class="input100" type="text" name="No.HP" placeholder="No.HP">
+                        <input class="input100" type="text" name="no_hp" placeholder="No.HP">
                         <span class="focus-input100"></span>
                         <span class="symbol-input100">
                             <i class="fa fa-phone" aria-hidden="true"></i>
@@ -76,14 +78,9 @@
                     </div>
                     
                     <div class="container-login100-form-btn">
-                        <button class="login100-form-btn">
+                        <button type="submit" class="login100-form-btn">
                             Sign Up
                         </button>
-                    </div>
-                    <div class="text-center p-t-46 p-b-20">
-                        <span class="txt2">
-                            or Sign Up using
-                        </span>
                     </div>
 
                     <div class="text-center p-t-12">

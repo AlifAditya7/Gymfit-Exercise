@@ -17,22 +17,19 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+                <a class="nav-link active" aria-current="page" href="user_view.php">Beranda</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Informasi Pengguna</a>
+                <a class="nav-link" aria-current="page" href="informasi_pengguna.php">Informasi Pengguna</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Program Latihan</a>
+                <a class="nav-link" aria-current="page" href="program_latihan.php">Program Latihan</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Panduan Nutrisi</a>
+                <a class="nav-link" aria-current="page" href="panduan_nutrisi.php">Panduan Nutrisi</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Lokasi Gym</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Pelatih Pribadi</a>
+                <a class="nav-link" aria-current="page" href="lokasi_gym.php">Lokasi Gym</a>
               </li>
           </div>
         </div>
@@ -52,7 +49,7 @@
             <button class="btn btn-light btn-lg shadow"><i class="material-icons" style="vertical-align: bottom;">arrow_forward</i>Mulai Latihan</button>
           </div>
           <video width="320" height="240" controls>
-            <source src="gym_vid.mp4" type="video/mp4"/>
+            <source src="<?= base_url('frontend-gymfit'); ?>/images/gym_vid.mp4" type="video/mp4"/>
             browsermu tidak mendukung untuk video ini!
           </video>
         </div>
@@ -62,7 +59,8 @@
     <div>
     <style>
       body {
-        background-image: url(<?= base_url('frontend-gymfit'); ?>/bg\ gym.jpg);
+        background-image: url(<?= base_url('frontend-gymfit'); ?>/images/bg_gym.jpg);
+        font-family: 'Arial', sans-serif;
       }
     </style>
     </div>
@@ -73,7 +71,7 @@
             <div class="col-md-4">
               <div class="card text-dark bg-white" >
                 <div class="card-body">
-                  <img src="otot.jpg" width="100px">
+                  <img src="<?= base_url('frontend-gymfit'); ?>/images/otot.jpg" width="100px">
                   <h3 class="card-title mb-3">Program Latihan</h3>
                   <p class="card-text">
                     Berisi tentang program program latihan yang bisa dilakukan
@@ -86,7 +84,7 @@
             <div class="col-md-4">
               <div class="card text-dark bg-white" >
                 <div class="card-body">
-                  <img src="otot2.jpg" width="100px">
+                  <img src="<?= base_url('frontend-gymfit'); ?>/images/otot2.jpg" width="100px">
                   <h3 class="card-title mb-3">Rekomendasi Latihan</h3>
                   <p class="card-text">
                     Berisi tentang Rekomendasi program program latihan yang bisa dilakukan
@@ -99,7 +97,7 @@
             <div class="col-md-4">
               <div class="card text-dark bg-white" >
                 <div class="card-body">
-                  <img src="bel.jpg" width="100px">
+                  <img src="<?= base_url('frontend-gymfit'); ?>/images/bel.jpg" width="100px">
                   <h3 class="card-title mb-3">Pengingat Personal</h3>
                   <p class="card-text">
                    pengingat bagi user untuk melakukan atau melanjutkan pelatihannya kembali
