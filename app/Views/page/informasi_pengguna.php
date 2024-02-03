@@ -28,19 +28,19 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link " aria-current="page" href="user_view.php">Beranda</a>
+                <a class="nav-link " aria-current="page" href="../">Beranda</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="informasi_pengguna.php">Informasi Pengguna</a>
+                <a class="nav-link active" aria-current="page" href="informasi_pengguna">Informasi Pengguna</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="program_latihan.php">Program Latihan</a>
+                <a class="nav-link" aria-current="page" href="program_latihan">Program Latihan</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="panduan_nutrisi.php">Panduan Nutrisi</a>
+                <a class="nav-link" aria-current="page" href="panduan_nutrisi">Panduan Nutrisi</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="lokasi_gym.php">Lokasi Gym</a>
+                <a class="nav-link" aria-current="page" href="lokasi_gym">Lokasi Gym</a>
               </li>
           </div>
         </div>
