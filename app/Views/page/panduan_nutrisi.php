@@ -39,7 +39,7 @@
     <div>
         <style>
           body {
-            background-image: url(/public/frontend-gymfit/images/vegi_bg.jpg);
+            background-image: url(<?= base_url('frontend-gymfit'); ?>/images/vegi_bg.jpg);
             font-family: 'Arial', sans-serif;
           }
         </style>
