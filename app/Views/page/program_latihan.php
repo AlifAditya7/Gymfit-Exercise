@@ -61,7 +61,7 @@
               <div class="col-md-4">
                 <div class="card text-dark bg-white" >
                   <div class="card-body">
-                    <img src="/public/frontend-gymfit/images/dumblerowicon.jpg" width="100px">
+                    <img src="<?= base_url('frontend-gymfit'); ?>/images/dumblerowicon.jpg" width="100px">
                     <h3 class="card-title mb-3">dumbbell Row</h3>
                     <p class="card-text">
                      
@@ -74,7 +74,7 @@
               <div class="col-md-4">
                 <div class="card text-dark bg-white" >
                   <div class="card-body">
-                    <img src="/public/frontend-gymfit/images/deadlifticon.jpg" width="100px">
+                    <img src="<?= base_url('frontend-gymfit'); ?>/images/deadlifticon.jpg" width="100px">
                     <h3 class="card-title mb-3">DeadLift</h3>
                     <p class="card-text">
                     </p>
@@ -86,7 +86,7 @@
               <div class="col-md-4">
                 <div class="card text-dark bg-white" >
                   <div class="card-body">
-                    <img src="/public/frontend-gymfit/images/plankicon.jpg" width="100px">
+                    <img src="<?= base_url('frontend-gymfit'); ?>/images/plankicon.jpg" width="100px">
                     <h3 class="card-title mb-3">Plank</h3>
                     <p class="card-text">
                      
@@ -104,7 +104,7 @@
               <div class="col-md-4">
                 <div class="card text-dark bg-white" >
                   <div class="card-body">
-                    <img src="/public/frontend-gymfit/images/situpicon.jpg" width="100px">
+                    <img src="<?= base_url('frontend-gymfit'); ?>/images/situpicon.jpg" width="100px">
                     <h3 class="card-title mb-3">Sit Up</h3>
                     <p class="card-text">
                       <h1><b></b></h1>
@@ -117,7 +117,7 @@
               <div class="col-md-4">
                 <div class="card text-dark bg-white" >
                   <div class="card-body">
-                    <img src="/public/frontend-gymfit/images/situp2.jpg" width="100px">
+                    <img src="<?= base_url('frontend-gymfit'); ?>/images/pushupicon.jpg" width="100px">
                     <h3 class="card-title mb-3">Push Up</h3>
                     <p class="card-text">
                      
@@ -148,12 +148,12 @@
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <!-- Image Corousel -->
-                <img src="/public/frontend-gymfit/images/pushup.jpg" class="d-block w-100" alt="Slide 1">
+                <img src="<?= base_url('frontend-gymfit'); ?>/images/pushup.jpg" class="d-block w-100" alt="Slide 1">
               </div>
               <div class="carousel-item">
                  <!-- Video Slide -->
             <div class="carousel-item active">
-                <img src="/public/frontend-gymfit/images/pushupvid.gif" class="d-block w-100" alt="Slide 2">>
+                <img src="<?= base_url('frontend-gymfit'); ?>/images/pushupvid.gif" class="d-block w-100" alt="Slide 2">>
               </div>
               </div>
               <!-- Add more carousel items as needed -->
@@ -200,12 +200,12 @@
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <!-- Image Corousel -->
-                <img src="/public/frontend-gymfit/images/situp2.jpg" class="d-block w-100" alt="Slide 1">
+                <img src="<?= base_url('frontend-gymfit'); ?>/images/situp2.jpg" class="d-block w-100" alt="Slide 1">
               </div>
               <div class="carousel-item">
                  <!-- Video Slide -->
             <div class="carousel-item active">
-                <img src="/public/frontend-gymfit/images/situp.jpg" class="d-block w-100" alt="Slide 2">>
+                <img src="<?= base_url('frontend-gymfit'); ?>/images/situp.jpg" class="d-block w-100" alt="Slide 2">>
               </div>
               </div>
               <!-- Add more carousel items as needed -->
@@ -252,12 +252,12 @@
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <!-- Image Corousel -->
-                <img src="/public/frontend-gymfit/images/plank.jpg" class="d-block w-100" alt="Slide 1">
+                <img src="<?= base_url('frontend-gymfit'); ?>/images/plank.jpg" class="d-block w-100" alt="Slide 1">
               </div>
               <div class="carousel-item">
                  <!-- Video Slide -->
             <div class="carousel-item active">
-                <img src="/public/frontend-gymfit/images/plank2.jpg" class="d-block w-100" alt="Slide 2">>
+                <img src="<?= base_url('frontend-gymfit'); ?>/images/plank2.jpg" class="d-block w-100" alt="Slide 2">>
               </div>
               </div>
               <!-- Add more carousel items as needed -->
@@ -304,11 +304,11 @@
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <!-- Image Corousel -->
-                <img src="/public/frontend-gymfit/images/deadlift.jpg" class="d-block w-100" alt="Slide 1">
+                <img src="<?= base_url('frontend-gymfit'); ?>/images/deadlift.jpg" class="d-block w-100" alt="Slide 1">
               </div>
               <div class="carousel-item">
             <div class="carousel-item active">
-                <img src="/public/frontend-gymfit/images/deadlift2.jpg" class="d-block w-100" alt="Slide 2">>
+                <img src="<?= base_url('frontend-gymfit'); ?>/images/deadlift2.jpg" class="d-block w-100" alt="Slide 2">>
               </div>
               </div>
               <!-- Add more carousel items as needed -->
@@ -355,11 +355,11 @@
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <!-- Image Corousel -->
-                <img src="/public/frontend-gymfit/images/dumblerow.jpg" class="d-block w-100" alt="Slide 1">
+                <img src="<?= base_url('frontend-gymfit'); ?>/images/dumblerow.jpg" class="d-block w-100" alt="Slide 1">
               </div>
               <div class="carousel-item">
             <div class="carousel-item active">
-                <img src="/public/frontend-gymfit/images/dumblerow2.jpg" class="d-block w-100" alt="Slide 2">>
+                <img src="<?= base_url('frontend-gymfit'); ?>/images/dumblerow2.jpg" class="d-block w-100" alt="Slide 2">>
               </div>
               </div>
               <!-- Add more carousel items as needed -->
