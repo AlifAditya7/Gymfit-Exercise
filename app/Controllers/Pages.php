@@ -4,44 +4,45 @@ namespace App\Controllers;
 
 class Pages extends BaseController
 {
-    public function index() 
+
+    public function index(): string
     {
-        if (session()->get('username') == '') {
-            session()->setFlashdata('gagal', 'Anda belum login');
-            return redirect()->to(base_url('login'));
-         }
-         return view('user_view');
+        $data = [
+            'title' => 'Home | Gymfit Excercise' 
+        ];
+        return view('home', $data);
     }
-    public function informasi_pengguna() 
+
+    public function profil(): string
     {
-        if (session()->get('username') == '') {
-            session()->setFlashdata('gagal', 'Anda belum login');
-            return redirect()->to(base_url('login'));
-         }
-         return view('page/informasi_pengguna');
+        $data = [
+            'title' => 'Profil | Gymfit Excercise' 
+        ];
+        return view('pages/profil', $data);
     }
-    public function lokasi_gym() 
+
+    public function program_latihan(): string
     {
-        if (session()->get('username') == '') {
-            session()->setFlashdata('gagal', 'Anda belum login');
-            return redirect()->to(base_url('login'));
-         }
-         return view('page/lokasi_gym');
+        $data = [
+            'title' => 'Program Latihan | Gymfit Excercise',
+            $url = "https://api.api-ninjas.com/v1/exercises",
+        ];
+        return view('pages/program_latihan', $data);
     }
-    public function panduan_nutrisi() 
+
+    public function panduan_nutrisi(): string
     {
-        if (session()->get('username') == '') {
-            session()->setFlashdata('gagal', 'Anda belum login');
-            return redirect()->to(base_url('login'));
-         }
-         return view('page/panduan_nutrisi');
+        $data = [
+            'title' => 'Panduan Nutrisi | Gymfit Excercise' 
+        ];
+        return view('pages/panduan_nutrisi', $data);
     }
-    public function program_latihan() 
+
+    public function lokasi_gym(): string
     {
-        if (session()->get('username') == '') {
-            session()->setFlashdata('gagal', 'Anda belum login');
-            return redirect()->to(base_url('login'));
-         }
-         return view('page/program_latihan');
+        $data = [
+            'title' => 'Lokasi Gym Terdekat | Gymfit Excercise' 
+        ];
+        return view('pages/lokasi_gym', $data);
     }
 }
