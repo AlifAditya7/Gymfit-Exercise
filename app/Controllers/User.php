@@ -10,9 +10,6 @@ class User extends BaseController
          session()->setFlashdata('gagal', 'Anda belum login');
          return redirect()->to(base_url('login'));
       }
-      $data = [
-         'title' => 'Beranda | Gymfit Excercise' 
-     ];
-      return view('home', $data);
+      return view('user_view');
    }
 }

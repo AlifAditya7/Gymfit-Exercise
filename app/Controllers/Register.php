@@ -1,8 +1,8 @@
 <?php namespace App\Controllers;
- 
+
 use CodeIgniter\Controller;
 use App\Models\M_user;
- 
+
 class Register extends Controller
 {
     public function index()
@@ -12,7 +12,7 @@ class Register extends Controller
         $data = [];
         echo view('login/user_register', $data);
     }
- 
+
     public function save()
     {
         //include helper form
@@ -25,7 +25,7 @@ class Register extends Controller
             'no_hp'         => 'required|min_length[11]|max_length[25]',
             'password'      => 'required|min_length[8]|max_length[255]',
         ];
-         
+
         if($this->validate($rules)){
             $model = new M_user();
             $data = [
@@ -41,7 +41,6 @@ class Register extends Controller
             $data['validation'] = $this->validator;
             echo view('login/user_register', $data);
         }
-         
+
     }
- 
 }

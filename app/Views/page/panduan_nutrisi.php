@@ -36,14 +36,13 @@
         </div>
       </nav>
     <!-- end -->
-    <div>
         <style>
           body {
             background-image: url(<?= base_url('frontend-gymfit'); ?>/images/vegi_bg.jpg);
             font-family: 'Arial', sans-serif;
           }
         </style>
-    </div>
+    
     <!-- showcase -->
     <div class="mt-4 p-5 text-white rounded shadow" style="background-color: white;">
       <div class="d-sm-flex align-items-center justify-content-between">

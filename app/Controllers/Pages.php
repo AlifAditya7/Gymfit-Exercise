@@ -4,45 +4,44 @@ namespace App\Controllers;
 
 class Pages extends BaseController
 {
-
-    public function profil()
+    public function index() 
     {
-        $data = [
-            'title' => 'Profil | Gymfit Excercise' 
-        ];
-        return view('pages/profil', $data);
+        if (session()->get('username') == '') {
+            session()->setFlashdata('gagal', 'Anda belum login');
+            return redirect()->to(base_url('login'));
+         }
+         return view('user_view');
     }
-
-    public function program_latihan()
+    public function informasi_pengguna() 
     {
-        $data = [
-            'title' => 'Program Latihan | Gymfit Excercise'
-        ];
-        
-        return view('pages/program_latihan', $data);
+        if (session()->get('username') == '') {
+            session()->setFlashdata('gagal', 'Anda belum login');
+            return redirect()->to(base_url('login'));
+         }
+         return view('page/informasi_pengguna');
     }
-
-    public function panduan_nutrisi()
+    public function lokasi_gym() 
     {
-        $data = [
-            'title' => 'Panduan Nutrisi | Gymfit Excercise' 
-        ];
-        return view('pages/panduan_nutrisi', $data);
+        if (session()->get('username') == '') {
+            session()->setFlashdata('gagal', 'Anda belum login');
+            return redirect()->to(base_url('login'));
+         }
+         return view('page/lokasi_gym');
     }
-
-    public function lokasi_gym()
+    public function panduan_nutrisi() 
     {
-        $data = [
-            'title' => 'Lokasi Gym Terdekat | Gymfit Excercise' 
-        ];
-        return view('pages/lokasi_gym', $data);
+        if (session()->get('username') == '') {
+            session()->setFlashdata('gagal', 'Anda belum login');
+            return redirect()->to(base_url('login'));
+         }
+         return view('page/panduan_nutrisi');
     }
-
-    public function bmi()
+    public function program_latihan() 
     {
-        $data = [
-            'title' => 'Body Mass Index | Gymfit Excercise' 
-        ];
-        return view('pages/bmi', $data);
+        if (session()->get('username') == '') {
+            session()->setFlashdata('gagal', 'Anda belum login');
+            return redirect()->to(base_url('login'));
+         }
+         return view('page/program_latihan');
     }
 }
