@@ -12,8 +12,8 @@
                 menurunkan berat badan maupun membuat masa otot
             </p>
             <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-            <button class="btn btn-light btn-lg shadow"><i class="material-icons"
-                    style="vertical-align: bottom;">arrow_forward</i>Mulai Latihan</button>
+            <a href="/pages/program_latihan" class="btn btn-light btn-lg shadow"><i class="material-icons"
+                    style="vertical-align: bottom;">arrow_forward</i>Mulai Latihan</a>
         </div>
         <video width="320" height="240" controls>
             <source src="assets/images/gym_vid.mp4" type="video/mp4" />
@@ -44,7 +44,7 @@
                             Berisi tentang program program latihan yang bisa dilakukan
                             oleh pengguna
                         </p>
-                        <a href="#" class="btn btn-dark">Selengkapnya</a>
+                        <a href="/pages/program_latihan" class="btn btn-dark">Selengkapnya</a>
                     </div>
                 </div>
             </div>

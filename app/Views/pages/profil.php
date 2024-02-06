@@ -96,7 +96,7 @@ $(document).ready(function() {
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
-                        <button type="button" class="btn btn-primary">Logout</button>
+                        <button type="submit" class="btn btn-primary">Logout</button>
                     </div>
                 </div>
             </div>
