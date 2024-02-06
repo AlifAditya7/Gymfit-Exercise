@@ -1,35 +1,6 @@
 <?= $this->extend('layouts/template'); ?>
 
 <?= $this->section('content'); ?>
-<body>
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow bg-black">
-        <div class="container">
-          <a class="navbar-brand" href="#">Gym Exercise</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="../">Beranda</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="informasi_pengguna">Informasi Pengguna</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="program_latihan">Program Latihan</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="panduan_nutrisi">Panduan Nutrisi</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="lokasi_gym">Lokasi Gym</a>
-              </li>
-          </div>
-        </div>
-      </nav>
-    <!-- end -->
     <div>
         <style>
           body {
@@ -82,5 +53,4 @@
             <button type="button" class="btn btn-secondary btn-lg">Cari Makanan</button>
         </div>
       </div>
-      </body>
 <?= $this->endSection(); ?>
