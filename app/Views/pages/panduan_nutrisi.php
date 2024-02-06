@@ -1,14 +1,13 @@
 <?= $this->extend('layouts/template'); ?>
 
 <?= $this->section('content'); ?>
-    <div>
-        <style>
+    <style>
           body {
             background-image: url(<?= base_url('frontend-gymfit'); ?>/images/vegi_bg.jpg);
             font-family: 'Arial', sans-serif;
           }
         </style>
-    </div>
+    
     <!-- showcase -->
     <div class="mt-4 p-5 text-white rounded shadow" style="background-color: white;">
       <div class="d-sm-flex align-items-center justify-content-between">
@@ -47,6 +46,12 @@
             document.getElementById("maxNutValue").textContent = maxNutValue;
         }
     </script>
+        
+
+        <div>
+            <button type="button" class="btn btn-secondary btn-lg">Cari Makanan</button>
+        </div>
+      </div>
         
 
         <div>
